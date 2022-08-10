@@ -412,7 +412,7 @@ Note that the repeated option is specified multiple times; this is the syntax fo
 
 ### Reading Custom Options from Descriptors
 
-```rust
+```rust,ignore
 // The generated code of `Extensions` declared previously.
 mod custom_options {
     include!("path/to/my/custom_options.rs");
@@ -460,7 +460,7 @@ extend Foo {
 
 When working with extensions on a decoded object, you use a reference to the generated `Extension` as a sort of handle.
 
-```rust
+```rust,ignore
 fn use_extension() {
     let mut message = Foo::default();
     message
